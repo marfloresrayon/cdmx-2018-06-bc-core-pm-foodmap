@@ -1,3 +1,7 @@
+window.fireRestaurantes.initializeFirebase();
+console.log("Sí jala")
+const db = firebase.firestore();
+console.log(db)
 var map;
 
 function initMap() {
@@ -38,3 +42,35 @@ btnFind.addEventListener('click', findMe = () => {
     navigator.geolocation.getCurrentPosition(localization, error);
 });
 
+
+//Buscar información de restaurantes en database 
+
+let searchbar = document.getElementById('searchFood');
+let searchBtn = document.getElementById('btnSearch');
+let foodFind = document.getElementById('data-food');
+
+db.collection("places").onSnapshot((querySnapshot) => {
+    foodFind.innerHTML = '';
+    querySnapshot.forEach((doc) => {
+        console.log(doc.data().address)
+        foodFind.innerHTML += `<li class="restaurantes">${doc.data().name}`;
+    });
+});
+
+
+//Buscador
+var search = document.getElementById('searchFood'),
+  restaurantes = document.getElementsByTagName('li'),
+  forEach = Array.prototype.forEach;
+
+search.addEventListener('keyup', function(result) {
+  var choice = this.value;
+
+  forEach.call(restaurantes, function(final) {
+    if (final.innerHTML.toLowerCase().search(choice.toLowerCase()) === -1) {
+      final.parentNode.style.display = 'none';
+    } else {
+      final.parentNode.style.display = '';
+    }
+  });
+}, false);
