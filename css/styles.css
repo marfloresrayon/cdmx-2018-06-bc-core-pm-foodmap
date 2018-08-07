@@ -1,3 +1,10 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 .t-font {
     font-family: 'Gochi Hand', cursive;
 }
@@ -5,6 +12,11 @@
 .p-font {
     font-family: 'Gochi Hand', cursive;
     font-size: 2em;
+}
+
+.pp-font{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
 }
 
 .h-col {
@@ -19,8 +31,14 @@
     height: 100%;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
+.bttn {
+    background-color: white;
+    border: none;
+    color: #FFA500;
+}
+
+.pp-font-s{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25em;
+   
+}
