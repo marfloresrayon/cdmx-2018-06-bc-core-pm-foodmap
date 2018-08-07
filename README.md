@@ -18,6 +18,9 @@ elegidas en base a su éxito y número de usuarios registrados.
 * Sus usuarios se identifican como Yelpers, los cuales han escrito
   más de 155 millones de reseñas sobre negocios hasta el 2018.
 
+![User flow Yelp](img/YelpFlow.png)
+
+
 ### Foursquare
 
 * Foursquare es una compañía de tecnología que busca usar la ubicación 
@@ -28,6 +31,9 @@ elegidas en base a su éxito y número de usuarios registrados.
 * Con más de 12 mil millones de check-ins, con un récord de más de 9 
   millones de check-ins en un mismo día. 
 * Más de 105 millones de lugares mapeados alrededor del mundo.
+
+![User flow Foursquare](img/FourFlow.png)
+
 
 ## :arrow_down: Flujo de la aplicación.
 
