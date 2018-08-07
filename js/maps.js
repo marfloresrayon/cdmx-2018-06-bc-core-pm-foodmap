@@ -1,5 +1,5 @@
 window.fireRestaurantes.initializeFirebase();
-console.log("Sí jala")
+console.log("Funcionando")
 const db = firebase.firestore();
 console.log(db)
 var map;
@@ -53,24 +53,44 @@ db.collection("places").onSnapshot((querySnapshot) => {
     foodFind.innerHTML = '';
     querySnapshot.forEach((doc) => {
         console.log(doc.data().address)
-        foodFind.innerHTML += `<li class="restaurantes">${doc.data().name}`;
+        foodFind.innerHTML += `<div class="row">
+        <div class="col s10 offset-s1 m7">
+          <div class="card">
+            <div class="card-image">
+              <img src="${doc.data().url}">
+              <span class="card-title">${doc.data().name}</span>
+            </div>
+            <div class="card-content">
+            <p>Tipo de comida: ${doc.data().type}</p>
+                  <p>Ranking: ${doc.data().ranking}</p>
+                  <p>Calificación promedio: ${doc.data().rate}</p>
+                  <p>Ranking: ${doc.data().price}</p>
+            </div>
+            <div class="card-action">
+            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Más información</a>
+            </div>
+          </div>
+        </div>
+      </div>`;
+
     });
 });
 
 
+
 //Buscador
 var search = document.getElementById('searchFood'),
-  restaurantes = document.getElementsByTagName('li'),
-  forEach = Array.prototype.forEach;
+    restaurantes = document.getElementsByTagName('li'),
+    forEach = Array.prototype.forEach;
 
-search.addEventListener('keyup', function(result) {
-  var choice = this.value;
+search.addEventListener('keyup', function (result) {
+    var choice = this.value;
 
-  forEach.call(restaurantes, function(final) {
-    if (final.innerHTML.toLowerCase().search(choice.toLowerCase()) === -1) {
-      final.parentNode.style.display = 'none';
-    } else {
-      final.parentNode.style.display = '';
-    }
-  });
+    forEach.call(restaurantes, function (final) {
+        if (final.innerHTML.toLowerCase().search(choice.toLowerCase()) === -1) {
+            final.parentNode.style.display = 'none';
+        } else {
+            final.parentNode.style.display = '';
+        }
+    });
 }, false);
