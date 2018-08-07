@@ -1,27 +1,43 @@
-#  F O O D M A P
+# :fork_and_knife: Yummy Food 
 
-Crea una web-app que a través de un input pueda filtrar los restaurantes
-que se encuentran cerca de ti *(Tú decides la estructura que tendrán tus datos,
-puedes crear una lista de restaurantes en un arreglo, en un objeto, consumir una API, etc. Lo importante es que el contenido debe ser dinámico y no estático y el diseño es totalmente libre)*.
+App diseñada para uso en celulares :iphone:, donde puedes buscar 
+tu comida favorita y encontrar los restaurantes más cercanos a ti
+donde podrás degustarla.  
 
-#### Flujo de la aplicación.
+## :bar_chart: Benchmark 
 
-Vista splash con duración de 2 segundos que redirecciona a tu vista
-principal.
-![Splash](https://github.com/AnaSalazar/curricula-js/blob/04-social-network/04-social-network/02-jquery/08-code-challenges/foodmap/splash.jpg?raw=true)
+Benchmark realizado en dos aplicaciones con funcionalidad semejante,
+elegidas en base a su éxito y número de usuarios registrados.
 
-En la vista principal se muestran todos los restaurantes "cerca de ti" junto
-con el input para filtrar tu elección *(Los criterios de filtrado son decisión
-tuya, puede ser por tipo de comida, costos, orden alfabético, etc.)*.
-![vista principal](https://github.com/AnaSalazar/curricula-js/blob/04-social-network/04-social-network/02-jquery/08-code-challenges/foodmap/2.jpg?raw=true)
+### Yelp 
 
-Ya que se hizo la elección del filtro deben mostrarse únicamente aquellos
-restaurantes que cumplan con la condición.
-![vista filtrado](https://github.com/AnaSalazar/curricula-js/blob/04-social-network/04-social-network/02-jquery/08-code-challenges/foodmap/3.jpg?raw=true)
+* Fundada en 2004 para ayudar a las personas a encontrar los mejores
+  negocios en su localidad. 
+* Tiene un promedio mensual de 30 millones de visitantes únicos dentro 
+  de la app y 70 millones de visitantes únicos en su versión móvil. 
+* Sus usuarios se identifican como Yelpers, los cuales han escrito
+  más de 155 millones de reseñas sobre negocios hasta el 2018.
 
-Al seleccionar alguno de los restaurantes, deberá mostrarse la información de
-este a través de un modal.
-![modal imagen](https://github.com/AnaSalazar/curricula-js/blob/04-social-network/04-social-network/02-jquery/08-code-challenges/foodmap/5.jpg?raw=true)
+### Foursquare
 
-Una vez cerrado el modal debe volver a la vista principal.
-![ultima vista](https://github.com/AnaSalazar/curricula-js/blob/04-social-network/04-social-network/02-jquery/08-code-challenges/foodmap/6.jpg?raw=true)
+* Foursquare es una compañía de tecnología que busca usar la ubicación 
+  inteligente para ayudar a sus usuarios a descubrir nuevos lugares en
+  base a las recomendaciones de otros. 
+* Su comunidad está formada por más de 50 millones de personas que hacen
+  uso a través del computador y aplicaciones móviles. 
+* Con más de 12 mil millones de check-ins, con un récord de más de 9 
+  millones de check-ins en un mismo día. 
+* Más de 105 millones de lugares mapeados alrededor del mundo.
+
+## :arrow_down: Flujo de la aplicación.
+
+Diseño guiado de forma sencilla e intuitiva, para dar a conocer
+a la usuaria a través de la aplicación, por medio de textos breves, 
+numerados que le permitirán llegar a su objetivo en el menor
+tiempo posible con calma y entendimiento del proceso. 
+
+![User flow](img/Flujo.jpg)
+
+
+
+
