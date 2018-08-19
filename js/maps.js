@@ -64,7 +64,7 @@ db.collection("places").onSnapshot((querySnapshot) => {
             <p>Tipo de comida: ${doc.data().type}</p>
                   <p>Ranking: ${doc.data().ranking}</p>
                   <p>Calificación promedio: ${doc.data().rate}</p>
-                  <p>Precio: ${doc.data().price}</p>
+                  <p>Rango de precios: ${doc.data().price}</p>
             </div>
             <div class="card-action">
             <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Más información</a>
