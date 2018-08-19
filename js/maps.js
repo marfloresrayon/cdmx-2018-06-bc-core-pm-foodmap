@@ -67,9 +67,22 @@ db.collection("places").onSnapshot((querySnapshot) => {
                   <p>Rango de precios: ${doc.data().price}</p>
             </div>
             <div class="card-action">
-            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Más información</a>
+            <!-- Modal Trigger -->
+            <button data-target="modal1" class="btn modal-trigger">Más información</button>
             </div>
           </div>
+        </div>
+      </div>
+      
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Más información</h4>
+          <p>Teléfono: ${doc.data().phone}</p>
+          <p>Dirección: ${doc.data().address} </p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo</a>
         </div>
       </div>`;
 
