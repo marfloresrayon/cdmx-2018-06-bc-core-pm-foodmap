@@ -1,4 +1,4 @@
-# :fork_and_knife: Yummy Food 
+# :fork_and_knife: Yummy Finder
 
 App diseñada para uso en celulares :iphone:, donde puedes buscar 
 tu comida favorita y encontrar los restaurantes más cercanos a ti
